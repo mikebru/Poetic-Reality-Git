@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/WallerCreek.unity
+    guid: 1fe12246bce2834418ebffcb3e96e5a4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 35a045c0fc7525d418311b72db21dc12,
       type: 2}
