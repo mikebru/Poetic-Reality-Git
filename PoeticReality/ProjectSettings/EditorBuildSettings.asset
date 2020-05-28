@@ -15,5 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CreekCollage.unity
     guid: f89c402f7fa4207429f0ff050053eb2b
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 424a04c4687b9a24c9422f0fa2e9c174,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 35a045c0fc7525d418311b72db21dc12,
       type: 2}
