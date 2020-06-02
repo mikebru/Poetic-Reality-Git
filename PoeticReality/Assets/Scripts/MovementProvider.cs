@@ -18,13 +18,6 @@ public class MovementProvider : TeleportationProvider
     private Vector3 StartPostion = Vector3.zero;
     private float StartDistance = 0;
 
-
-
-    // the current teleportation request
-    TeleportRequest m_CurrentRequest;
-    // whether the current teleportation request is valid.
-    bool m_ValidRequest = false;
-
     protected override void Awake()
     {
         base.Awake();
@@ -33,23 +26,14 @@ public class MovementProvider : TeleportationProvider
         Head = GetComponent<XRRig>().cameraGameObject;
     }
 
-    /// <summary>
-    /// This function will queue a teleportation request within the provider. 
-    /// </summary>
-    /// <param name="teleportRequest">The teleportation request</param>
-    /// <returns>true if successful.</returns>
-    public override bool QueueTeleportRequest(TeleportRequest teleportRequest)
-    {
-        m_CurrentRequest = teleportRequest;
-        m_ValidRequest = true;
-        return true;
-    }
 
     // Start is called before the first frame update
     void Start()
     {
         PositionCharacterCOntroller();
     }
+
+
 
     // Update is called once per frame
     protected void Update()
@@ -88,7 +72,7 @@ public class MovementProvider : TeleportationProvider
 
         }
 
-            CheckForInput();
+        CheckForInput();
 
     }
 
