@@ -1,0 +1,14 @@
+#
+# Wavefront material file
+# Converted by Meshlab Group
+#
+
+newmtl material_0
+Ka 0.200000 0.200000 0.200000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Tr 1.000000
+illum 2
+Ns 0.000000
+map_Kd map_5768f45a-0ae3-4356-9bf3-24c225c097ee_densified_mesh_textured_4096.jpg
+
