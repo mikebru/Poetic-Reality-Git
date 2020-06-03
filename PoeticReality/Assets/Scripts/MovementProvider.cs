@@ -22,7 +22,7 @@ public class MovementProvider : TeleportationProvider
     {
         base.Awake();
 
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
         Head = GetComponent<XRRig>().cameraGameObject;
     }
 
@@ -30,7 +30,7 @@ public class MovementProvider : TeleportationProvider
     // Start is called before the first frame update
     void Start()
     {
-        PositionCharacterCOntroller();
+        //PositionCharacterCOntroller();
     }
 
 
@@ -38,7 +38,7 @@ public class MovementProvider : TeleportationProvider
     // Update is called once per frame
     protected void Update()
     {
-        PositionCharacterCOntroller();
+        //PositionCharacterCOntroller();
 
 
         if (m_ValidRequest && BeginLocomotion() && isMoving == false)
@@ -64,7 +64,9 @@ public class MovementProvider : TeleportationProvider
                 Vector3 cameraDestination = m_CurrentRequest.destinationPosition + heightAdjustment;
 
                 Destintation = cameraDestination;
-                StartPostion = xrRig.rig.transform.position + heightAdjustment;
+
+
+                StartPostion = xrRig.cameraGameObject.transform.position;
 
                 isMoving = true;
                 // xrRig.MoveCameraToWorldLocation(cameraDestination);
@@ -93,7 +95,7 @@ public class MovementProvider : TeleportationProvider
         {
             //Debug.Log(Pressed);
 
-            if (Pressed > .25f)
+            if (Pressed > .20f)
             {
                 if (isMoving)
                 {
@@ -103,6 +105,8 @@ public class MovementProvider : TeleportationProvider
                     }
 
                     float lerpPosition = (StartDistance - Vector3.Distance(controller.transform.position, Head.transform.position)) * 4;
+
+                    lerpPosition = lerpPosition * lerpPosition;
 
                     lerpPosition = Mathf.Clamp(lerpPosition, 0, 1);
 
@@ -126,6 +130,7 @@ public class MovementProvider : TeleportationProvider
     void Move(float LerpPosition)
     {
         Vector3 cameraDestination = Vector3.Lerp(StartPostion, Destintation, LerpPosition);
+
         var xrRig = system.xrRig;
         xrRig.MoveCameraToWorldLocation(cameraDestination);
 

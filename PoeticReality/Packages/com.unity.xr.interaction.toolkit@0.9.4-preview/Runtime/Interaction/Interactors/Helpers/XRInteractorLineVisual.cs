@@ -382,7 +382,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
             }
 
             // update previous points            
-            Array.Copy(m_RenderPoints, m_PreviousRenderPoints, m_NoRenderPoints);
+            //Array.Copy(m_RenderPoints, m_PreviousRenderPoints, m_NoRenderPoints);
             m_NoPreviousRenderPoints = m_NoRenderPoints;
             m_PreviousHit = m_CurrentHit;
             m_SnapCurve = false; 
