@@ -6,17 +6,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class MovementProvider : TeleportationProvider
 {
-    [SerializeField]
-    [Tooltip("A list of controllers that allow Snap Turn.  If an XRController is not enabled, or does not have input actions enabled.  Snap Turn will not work.")]
-    List<XRController> m_Controllers = new List<XRController>();
-
     private CharacterController characterController = null;
     private GameObject Head = null;
 
     private bool isMoving = false;
     private Vector3 Destintation = Vector3.zero;
     private Vector3 StartPostion = Vector3.zero;
-    private float StartDistance = 0;
+
+    public float TravelSpeed = 4;
 
     protected override void Awake()
     {
@@ -39,8 +36,6 @@ public class MovementProvider : TeleportationProvider
     protected void Update()
     {
         //PositionCharacterCOntroller();
-
-
         if (m_ValidRequest && BeginLocomotion() && isMoving == false)
         {
             var xrRig = system.xrRig;
@@ -64,76 +59,67 @@ public class MovementProvider : TeleportationProvider
                 Vector3 cameraDestination = m_CurrentRequest.destinationPosition + heightAdjustment;
 
                 Destintation = cameraDestination;
-
-
                 StartPostion = xrRig.cameraGameObject.transform.position;
 
                 isMoving = true;
+
+                //move coroutine 
+                StartCoroutine(ControllerMove(m_CurrentRequest.controller.GetComponent<XRController>(), StartPostion, Destintation));
+
                 // xrRig.MoveCameraToWorldLocation(cameraDestination);
             }
-
         }
-
-        CheckForInput();
-
+        //CheckForInput();
     }
 
-    void CheckForInput()
-    {
-        foreach (XRController controller in m_Controllers)
-        {
-            if (controller.enableInputActions)
-            {
-                CheckForGrab(controller);
-            }
-        }
-    }
 
-    void CheckForGrab(XRController controller)
-    {
-        if(controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float Pressed))
-        {
-            //Debug.Log(Pressed);
 
-            if (Pressed > .20f)
+    IEnumerator ControllerMove(XRController controller, Vector3 StartPosition, Vector3 EndPosition)
+    {
+        float StartHandDistance = Vector3.Distance(new Vector3(controller.transform.localPosition.x, 0, controller.transform.localPosition.z), new Vector3(Head.transform.localPosition.x, 0, Head.transform.localPosition.z));
+
+        Vector3 inversePosition = StartPosition - (EndPosition - StartPosition);
+
+        float Pressed = .25f;
+
+        while (Pressed > .20f)
+        {
+            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out Pressed))
             {
-                if (isMoving)
+                //player pulling 
+                float moveStrength = (StartHandDistance - Vector3.Distance(new Vector3(controller.transform.localPosition.x, 0, controller.transform.localPosition.z), new Vector3(Head.transform.localPosition.x, 0, Head.transform.localPosition.z))) * 4;
+
+                moveStrength = Mathf.Clamp(moveStrength, -1, 1);
+
+                //Debug.Log(moveStrength);
+
+                var xrRig = system.xrRig;
+                Vector3 cameraDestination;
+
+                if (moveStrength > 0)
                 {
-                    if(StartDistance == 0)
-                    {
-                        StartDistance = Vector3.Distance(controller.transform.position, Head.transform.position);
-                    }
-
-                    float lerpPosition = (StartDistance - Vector3.Distance(controller.transform.position, Head.transform.position)) * 4;
-
-                    lerpPosition = lerpPosition * lerpPosition;
-
-                    lerpPosition = Mathf.Clamp(lerpPosition, 0, 1);
-
-                    //Debug.Log(lerpPosition);
-                    Move(lerpPosition);
+                    cameraDestination = Vector3.Lerp(xrRig.cameraGameObject.transform.position, EndPosition, moveStrength * TravelSpeed * Time.deltaTime);
                 }
-            }
-            else
-            {
-                EndLocomotion();
-                m_ValidRequest = false;
-                isMoving = false;
-                StartDistance = 0; 
+                else
+                {
+                    cameraDestination = Vector3.Lerp(xrRig.cameraGameObject.transform.position, inversePosition, Mathf.Abs(moveStrength) * TravelSpeed * Time.deltaTime);
+                }
+
+                xrRig.MoveCameraToWorldLocation(cameraDestination);
+
+                yield return null;
             }
         }
-    }
 
+        //apply force to move character with release 
+        if(controller.inputDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 controllerVelocity))
+        {
+          //  GetComponent<Rigidbody>().AddForce(forwardDirection * controllerVelocity.magnitude * 50);
+        }
 
-
-
-    void Move(float LerpPosition)
-    {
-        Vector3 cameraDestination = Vector3.Lerp(StartPostion, Destintation, LerpPosition);
-
-        var xrRig = system.xrRig;
-        xrRig.MoveCameraToWorldLocation(cameraDestination);
-
+        EndLocomotion();
+        m_ValidRequest = false;
+        isMoving = false;
     }
 
 
@@ -156,8 +142,5 @@ public class MovementProvider : TeleportationProvider
         //apply
         characterController.center = newCenter;
     }
-
-
-
 
 }

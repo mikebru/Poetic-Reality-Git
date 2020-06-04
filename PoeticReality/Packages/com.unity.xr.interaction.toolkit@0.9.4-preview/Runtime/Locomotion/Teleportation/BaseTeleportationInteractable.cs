@@ -43,6 +43,10 @@ namespace UnityEngine.XR.Interaction.Toolkit
         /// The option of which object's orientation in the rig will be matched with the destination after teleportation.
         /// </summary>
         public MatchOrientation matchOrientation;
+        /// <summary>
+        /// The controller which insiated the move Teleport Request 
+        /// </summary>
+        public GameObject controller;
     }
 
     /// <summary>

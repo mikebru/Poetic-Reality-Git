@@ -15,6 +15,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
             teleportRequest.destinationUpVector = transform.up; // use the area transform for data.
             teleportRequest.destinationForwardVector = transform.forward;
             teleportRequest.destinationRotation = transform.rotation;
+            teleportRequest.controller = interactor.gameObject;
             return true;
         }      
     }

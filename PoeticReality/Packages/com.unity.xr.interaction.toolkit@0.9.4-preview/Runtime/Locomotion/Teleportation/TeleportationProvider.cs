@@ -55,6 +55,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
 
                     xrRig.MoveCameraToWorldLocation(cameraDestination);
                 }
+
                 EndLocomotion();
                 m_ValidRequest = false;
             }          

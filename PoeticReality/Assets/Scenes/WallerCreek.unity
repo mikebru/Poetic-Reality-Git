@@ -235,8 +235,8 @@ Rigidbody:
   m_GameObject: {fileID: 220880157}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -342,6 +342,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8971815242078274458, guid: 5d8ea856868f73b44bc827d969753430,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0064
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971815242078274458, guid: 5d8ea856868f73b44bc827d969753430,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0492
+      objectReference: {fileID: 0}
     - target: {fileID: 8971815243198252150, guid: 5d8ea856868f73b44bc827d969753430,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3602,6 +3612,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1292770649}
     m_Modifications:
+    - target: {fileID: 3065597248397571608, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: TravelSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3065597248960918809, guid: 175043a8a5c5313458b195825c0f18a1,
         type: 3}
       propertyPath: m_Name
@@ -3672,6 +3687,41 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1260861578}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_LineType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_Velocity
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_AdditionalFlightTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_HitDetectionType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249217854324, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_SphereCastRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3065597249217854325, guid: 175043a8a5c5313458b195825c0f18a1,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
@@ -3692,6 +3742,41 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1260861578}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_LineType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_Velocity
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_AdditionalFlightTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_HitDetectionType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065597249471790104, guid: 175043a8a5c5313458b195825c0f18a1,
+        type: 3}
+      propertyPath: m_SphereCastRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3065597249471790105, guid: 175043a8a5c5313458b195825c0f18a1,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier

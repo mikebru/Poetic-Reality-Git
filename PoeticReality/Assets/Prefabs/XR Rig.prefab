@@ -244,8 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 3065597248960918813}
-  m_Controllers:
-  - {fileID: 3065597249217854331}
+  TravelSpeed: 4
 --- !u!1 &3065597249217854320
 GameObject:
   m_ObjectHideFlags: 0
