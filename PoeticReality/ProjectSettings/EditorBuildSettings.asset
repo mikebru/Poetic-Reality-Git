@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/BUNDLES/CORE/Scenes/SampleScene.unity
+    path: Assets/BUNDLES/01_VALLEY/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/BUNDLES/CORE/Scenes/WallerCreek.unity
+    path: Assets/BUNDLES/01_VALLEY/Scenes/WallerCreek.unity
     guid: 1fe12246bce2834418ebffcb3e96e5a4
   - enabled: 0
-    path: Assets/BUNDLES/CORE/Scenes/CreekCollage.unity
+    path: Assets/BUNDLES/01_VALLEY/Scenes/CreekCollage.unity
     guid: f89c402f7fa4207429f0ff050053eb2b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 424a04c4687b9a24c9422f0fa2e9c174,
