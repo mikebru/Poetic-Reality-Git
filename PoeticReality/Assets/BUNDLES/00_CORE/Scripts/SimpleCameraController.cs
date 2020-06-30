@@ -135,13 +135,16 @@ namespace UnityTemplateProjects
             // Unlock and show cursor when right mouse button released
             if (Input.GetMouseButtonUp(1))
             {
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
+               // Cursor.visible = true;
+               // Cursor.lockState = CursorLockMode.None;
             }
 
             // Rotation
-            if (Input.GetMouseButton(1))
+            //if (Input.GetMouseButton(1))
+            if(true)
             {
+                Cursor.lockState = CursorLockMode.Locked;
+
                 var mouseMovement = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y") * (invertY ? 1 : -1));
                 
                 var mouseSensitivityFactor = mouseSensitivityCurve.Evaluate(mouseMovement.magnitude);
