@@ -70,14 +70,14 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0
+    - _Metallic: 1
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _RainDisplace: 1
     - _RainStrength: 0
     - _Range: 1.73
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -90,11 +90,11 @@ Material:
     - Color_72A13A51: {r: 0.23807405, g: 0.23998903, b: 0.4716981, a: 0.1764706}
     - Vector3_1D6CFADB: {r: 0, g: 0, b: 0, a: 0}
     - Vector3_B107DED6: {r: 0, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
+    - _BaseColor: {r: 0, g: 0.69318175, b: 1, a: 0.27058825}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0, g: 0.5999999, b: 1, a: 0.5882353}
+    - _DeepColor: {r: 1, g: 0, b: 0.92438126, a: 0.16862746}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: 12.665158, g: 1.6325933, b: -4.286165, a: 0}
+    - _Position: {r: 12.275272, g: 1.6422639, b: -10.549013, a: 0}
     - _Range: {r: 0, g: 8, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
 --- !u!114 &3956286757418361419
