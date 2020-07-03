@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LimbMask7
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: creekspiritbodyStillRigged9
+    m_Weight: 0
+  - m_Path: RootJoint
+    m_Weight: 0
+  - m_Path: RootJoint/Limb1
+    m_Weight: 0
+  - m_Path: RootJoint/Limb1/Limb1_1
+    m_Weight: 0
+  - m_Path: RootJoint/Limb1/Limb1_1/Limb1_2
+    m_Weight: 0
+  - m_Path: RootJoint/Limb1/Limb1_1/Limb1_2/Limb1_3
+    m_Weight: 0
+  - m_Path: RootJoint/Limb2
+    m_Weight: 0
+  - m_Path: RootJoint/Limb2/Limb2_1
+    m_Weight: 0
+  - m_Path: RootJoint/Limb2/Limb2_1/Limb2_2
+    m_Weight: 0
+  - m_Path: RootJoint/Limb2/Limb2_1/Limb2_2/Limb2_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb3
+    m_Weight: 0
+  - m_Path: RootJoint/limb3/limb3_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb3/limb3_1/limb3_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb3/limb3_1/limb3_2/limb3_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb4
+    m_Weight: 0
+  - m_Path: RootJoint/limb4/limb4_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb4/limb4_1/limb4_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb4/limb4_1/limb4_2/limb4_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb5
+    m_Weight: 0
+  - m_Path: RootJoint/limb5/limb5_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb5/limb5_1/limb5_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb5/limb5_1/limb5_2/limb5_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb6
+    m_Weight: 0
+  - m_Path: RootJoint/limb6/limb6_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb6/limb6_1/limb6_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb6/limb6_1/limb6_2/limb6_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb7
+    m_Weight: 1
+  - m_Path: RootJoint/limb7/limb7_1
+    m_Weight: 1
+  - m_Path: RootJoint/limb7/limb7_1/limb7_2
+    m_Weight: 1
+  - m_Path: RootJoint/limb7/limb7_1/limb7_2/limb7_3
+    m_Weight: 1
+  - m_Path: RootJoint/limb8
+    m_Weight: 0
+  - m_Path: RootJoint/limb8/limb8_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb8/limb8_1/limb8_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb8/limb8_1/limb8_2/limb8_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb9
+    m_Weight: 0
+  - m_Path: RootJoint/limb9/limb9_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb9/limb9_1/limb9_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb9/limb9_1/limb9_2/limb9_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb10
+    m_Weight: 0
+  - m_Path: RootJoint/limb10/limb10_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb10/limb10_1/limb10_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb10/limb10_1/limb10_2/limb10_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb11
+    m_Weight: 0
+  - m_Path: RootJoint/limb11/limb11_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb11/limb11_1/limb11_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb11/limb11_1/limb11_2/limb11_3
+    m_Weight: 0
+  - m_Path: RootJoint/limb12
+    m_Weight: 0
+  - m_Path: RootJoint/limb12/limb12_1
+    m_Weight: 0
+  - m_Path: RootJoint/limb12/limb12_1/limb12_2
+    m_Weight: 0
+  - m_Path: RootJoint/limb12/limb12_1/limb12_2/limb12_3
+    m_Weight: 0
