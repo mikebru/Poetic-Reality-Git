@@ -360,8 +360,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1246384768}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &130246918
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,8 +488,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 386059676}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &209976904
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,8 +560,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1421127548}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &290545022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,8 +5386,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1493673748}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &344611979
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,8 +5568,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1563113412}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!4 &386059675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2688248521993914757, guid: 5f6fe5594742d1e4db236978eefee3b8,
@@ -5658,8 +5658,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1917902820}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &464696395
 GameObject:
   m_ObjectHideFlags: 0
@@ -5730,8 +5730,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 776881453}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &540625655
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,8 +6414,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1985107668}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &1063624329
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,8 +6486,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1641224131}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &1090431327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6614,8 +6614,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1127743418}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!4 &1127743417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2688248523268275111, guid: 5f6fe5594742d1e4db236978eefee3b8,
@@ -6797,7 +6797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 1
+  boost: 2
   positionLerpTime: 0.2
   mouseSensitivityCurve:
     serializedVersion: 2
@@ -7171,6 +7171,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796b75e345bd64d47a31edd757bd2670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1504397217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504397219}
+  - component: {fileID: 1504397220}
+  m_Layer: 0
+  m_Name: Audio-Spectru
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504397219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504397217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1504397220
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504397217}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: be591393e338806489e00764382b3ca6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1.82
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.41666666
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1522775768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2688248522853839558, guid: 5f6fe5594742d1e4db236978eefee3b8,
@@ -7231,7 +7358,7 @@ ReflectionProbe:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 2.44
+  m_IntensityMultiplier: 1
   m_BlendDistance: 1
   m_HDR: 1
   m_BoxProjection: 1
@@ -7727,8 +7854,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1729548034}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!1 &1627214136
 GameObject:
   m_ObjectHideFlags: 0
@@ -8254,8 +8381,8 @@ MonoBehaviour:
   LimbPowerFallOff: 2
   reachDistance: 5
   ChainIK: {fileID: 1522775769}
-  TurbulenceStrength: 0.1
-  TurbulenceSpeed: 0.4
+  TurbulenceStrength: 0.3
+  TurbulenceSpeed: 1
 --- !u!4 &1917902819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2688248522443627517, guid: 5f6fe5594742d1e4db236978eefee3b8,

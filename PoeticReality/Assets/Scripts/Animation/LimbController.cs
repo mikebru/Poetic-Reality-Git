@@ -67,6 +67,12 @@ public class LimbController : MonoBehaviour
         animator.SetFloat(ParameterName, LimbExtension);
     }
 
+
+    public void SetTurbulence(float strength)
+    {
+        TurbulenceStrength = strength;
+    }
+
     void LimbReach()
     {
         //distance between limb and player 
