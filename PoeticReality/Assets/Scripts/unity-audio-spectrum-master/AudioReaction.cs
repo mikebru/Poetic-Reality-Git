@@ -1,42 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CrazyMinnow.AmplitudeWebGL; // Import the AmplitudeWebGL namespace
 
 public class AudioReaction : MonoBehaviour
 {
-    public enum BarType { Realtime, PeakLevel, MeanLevel };
+   // public enum BarType { Realtime, PeakLevel, MeanLevel };
 
     public int index;
-    public BarType barType;
+   // public BarType barType;
 
-    AudioSpectrum spectrum;
+    public Amplitude amplitude;
 
     void Awake()
     {
-        spectrum = FindObjectOfType(typeof(AudioSpectrum)) as AudioSpectrum;
+        amplitude = FindObjectOfType(typeof(Amplitude)) as Amplitude;
     }
 
     void Update()
     {
-        if (index < spectrum.Levels.Length)
+        if (index < amplitude.sampleSize)
         {
             float scale = 0.0f;
 
-            switch (barType)
-            {
-                case BarType.Realtime:
-                    scale = spectrum.Levels[index];
-                    break;
-                case BarType.PeakLevel:
-                    scale = spectrum.PeakLevels[index];
-                    break;
-                case BarType.MeanLevel:
-                    scale = spectrum.MeanLevels[index];
-                    break;
-            }
+            scale = amplitude.sample[index];
 
             var vs = transform.localScale;
-            vs = (Vector3.one * .1f) + Vector3.one * scale * 20.0f;
+            vs = (Vector3.one * .1f) + Vector3.one * scale;
             transform.localScale = vs;
         }
     }
