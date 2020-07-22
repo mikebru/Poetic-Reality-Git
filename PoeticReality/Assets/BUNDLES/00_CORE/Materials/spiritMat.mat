@@ -53,6 +53,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - DisplaceStrength: 1
     - Vector1_6FEB1DDD: 1
     - Vector1_EEF7E65F: 1
     - Vector1_FC8C728B: 20
