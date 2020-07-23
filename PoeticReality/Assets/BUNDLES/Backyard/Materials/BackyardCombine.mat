@@ -32,6 +32,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_ECC5E6D4:
+        m_Texture: {fileID: 8400000, guid: fee15b3a8abefbd45b3e9489cec89541, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: ee1df0a11851d054db346c13dae5979d, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -65,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - DisplaceStrength: 1.8460668
+    - DisplaceStrength: 3.3122692
     - Reflection: 0
     - Vector1_53F327B3: 0
     - Vector1_6FEB1DDD: 1
@@ -86,7 +90,7 @@ Material:
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _RainDisplace: 1
-    - _RainStrength: 0
+    - _RainStrength: 2
     - _ReceiveShadows: 1
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
@@ -104,8 +108,8 @@ Material:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _DeepColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: 0, g: 0, b: 0, a: 0}
-    - _Range: {r: 0, g: 1, b: 0, a: 0}
+    - _Position: {r: 10, g: 0.5, b: -4, a: 0}
+    - _Range: {r: 0, g: 7.44, b: 0.005, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
 --- !u!114 &1448605456147136868
 MonoBehaviour:

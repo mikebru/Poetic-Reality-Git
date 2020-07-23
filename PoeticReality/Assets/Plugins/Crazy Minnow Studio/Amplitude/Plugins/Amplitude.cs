@@ -16,7 +16,6 @@ namespace CrazyMinnow.AmplitudeWebGL
         public float average;
         public float max;
         public float[] sample;
-
         [HideInInspector] public enum DataType { Amplitude, Frequency}
         [HideInInspector] public DataType dataType = DataType.Amplitude;
         [HideInInspector] public string[] sampleSizeNames = new string[] { "64", "128", "256", "512", "1024", "2048" };
