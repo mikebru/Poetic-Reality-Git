@@ -140,8 +140,8 @@ namespace UnityTemplateProjects
             }
 
             // Rotation
-            //if (Input.GetMouseButton(1))
-            if(true)
+            if (Input.GetMouseButton(1))
+            //if(true)
             {
                 //Cursor.lockState = CursorLockMode.Locked;
 

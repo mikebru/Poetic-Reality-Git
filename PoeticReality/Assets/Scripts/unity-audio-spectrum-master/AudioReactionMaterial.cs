@@ -41,10 +41,11 @@ public class AudioReactionMaterial : MonoBehaviour
                     break;
             }
 
-            var vs = transform.localScale;
-            vs = Vector3.one * scale * Strength;
-            transform.localScale = vs;
+            //var vs = transform.localScale;
+            Vector3 vs = Vector3.one * scale * Strength;
+            //transform.localScale = vs;
 
+            Debug.Log(vs);
 
             material.SetFloat(ParameterName, vs.x);
 
