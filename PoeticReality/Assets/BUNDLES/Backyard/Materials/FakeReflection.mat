@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlackReflection
-  m_Shader: {fileID: -6465566751694194690, guid: 69f689560a7689944a45c634b5108647,
+  m_Name: FakeReflection
+  m_Shader: {fileID: -6465566751694194690, guid: 346684a804528d64ab2b19c96716513d,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -52,6 +52,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ReflectionMap:
+        m_Texture: {fileID: 8900000, guid: d5a2a7c12bf605949869324c2f2f32ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -66,6 +70,8 @@ Material:
     - _BumpScale: 1
     - _Cull: 0
     - _Cutoff: 0.5
+    - _DisplaceSpeed: 0.06
+    - _DisplaceStrength: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -83,7 +89,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WaterLevel: 0
-    - _Wavelength: 10
+    - _Wavelength: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
