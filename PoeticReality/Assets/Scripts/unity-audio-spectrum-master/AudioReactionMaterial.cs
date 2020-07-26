@@ -11,6 +11,8 @@ public class AudioReactionMaterial : MonoBehaviour
     public enum BarType { Realtime, PeakLevel, MeanLevel };
 
     public float Strength = 10;
+    public float minLevel;
+
 
     public int index;
     public BarType barType;
@@ -47,7 +49,7 @@ public class AudioReactionMaterial : MonoBehaviour
 
             Debug.Log(vs);
 
-            material.SetFloat(ParameterName, vs.x);
+            material.SetFloat(ParameterName, minLevel + vs.x);
 
         }
     }

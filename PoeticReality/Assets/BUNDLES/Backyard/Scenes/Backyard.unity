@@ -473,7 +473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &179727961
 Transform:
   m_ObjectHideFlags: 0
@@ -518,6 +518,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 9f12badc6911d07488437f33afdd27ce, type: 2}
   ParameterName: DisplaceStrength
   Strength: 10
+  minLevel: 0
   index: 3
   barType: 2
 --- !u!114 &179727964
@@ -938,7 +939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &215886510
 Transform:
   m_ObjectHideFlags: 0
@@ -54590,7 +54591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294739550}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
@@ -55089,7 +55090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1365228594
 Transform:
   m_ObjectHideFlags: 0
@@ -55134,6 +55135,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 9f12badc6911d07488437f33afdd27ce, type: 2}
   ParameterName: DisplaceStrength
   Strength: 200
+  minLevel: 0
   index: 3
   barType: 2
 --- !u!114 &1365228597
@@ -56798,13 +56800,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715063863}
-  m_LocalRotation: {x: 0.91964173, y: -0, z: -0.3927584, w: 0}
+  m_LocalRotation: {x: 0.5826906, y: 0, z: -0.81269413, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.81808233, y: 0.81808233, z: 0.81808233}
   m_Children: []
   m_Father: {fileID: 673140088}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 180, y: 46.25299, z: -0.000015258789}
+  m_LocalEulerAnglesHint: {x: 180, y: 108.72, z: 0}
 --- !u!114 &1715063865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68900,7 +68902,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745003663}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67753d16aeecd3d44b3bd3a815a134ac, type: 3}
   m_Name: 
@@ -68950,9 +68952,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620136da13da318469f0e7057e0b03ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 2ca6e457240ee9c4dad362e144de8d4b, type: 2}
-  ParameterName: DisplaceStrength
+  material: {fileID: 2100000, guid: ffdbdf0620d26674db3a3b8918054051, type: 2}
+  ParameterName: _DisplaceStrength
   Strength: 1
+  minLevel: 0.3
   index: 3
   barType: 2
 --- !u!114 &1745003669
