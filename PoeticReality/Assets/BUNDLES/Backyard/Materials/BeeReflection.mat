@@ -7,25 +7,29 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BackYard-Rain
-  m_Shader: {fileID: -6465566751694194690, guid: bf0f4eedc3e728a4f9fe65fbc3908309,
+  m_Name: BeeReflection
+  m_Shader: {fileID: -6465566751694194690, guid: 346684a804528d64ab2b19c96716513d,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_ECC5E6D4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseTexture:
-        m_Texture: {fileID: 2800000, guid: ee1df0a11851d054db346c13dae5979d, type: 3}
+        m_Texture: {fileID: 2800000, guid: efa10ee8b27b75643a555b75f377503d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -48,56 +52,59 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ReflectionMap:
+        m_Texture: {fileID: 8400000, guid: d0ec3b87ae5623c489cfad4b550ebfea, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - DisplaceStrength: 0
+    - Vector1_1E305DD5: 0.5
+    - Vector1_239CA160: 2.17
+    - Vector1_58C036B: 0.19
     - Vector1_6FEB1DDD: 1
-    - Vector1_B16F2D14: 1
-    - Vector1_D5C7AD93: 1
+    - Vector1_E46A46E3: 1
     - Vector1_EEF7E65F: 1
-    - Vector1_FC8C728B: 10
+    - Vector1_FC8C728B: 20
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.5
-    - _DisplaceInterval: 0.32
-    - _DisplaceRain: 1
+    - _DisplaceSpeed: 4.31
+    - _DisplaceStrength: 0.05
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 1
+    - _Metallic: 0.96
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _RainDisplace: 1
     - _RainStrength: 0
-    - _Range: 1.73
     - _ReceiveShadows: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.97
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _WaterLevel: 0
-    - _Wavelength: 30
+    - _Wavelength: 21.08
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_72A13A51: {r: 0.23807405, g: 0.23998903, b: 0.4716981, a: 0.1764706}
-    - Vector3_1D6CFADB: {r: 0, g: 0, b: 0, a: 0}
-    - Vector3_B107DED6: {r: 0, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 0, g: 0.69318175, b: 1, a: 0.27058825}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 1, g: 0, b: 0.92438126, a: 0.16862746}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: 12.892561, g: 2.331597, b: 5.016894, a: 0}
-    - _Range: {r: 0, g: 8, b: 0, a: 0}
+    - _DeepColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 2}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
+    - _Range: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &3956286757418361419
+--- !u!114 &3205604097370124519
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
