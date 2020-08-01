@@ -64,9 +64,9 @@ Material:
     - DisplaceStrength: 0
     - Vector1_1E305DD5: 0
     - Vector1_239CA160: 1
-    - Vector1_58C036B: 0
+    - Vector1_58C036B: 0.31
     - Vector1_6FEB1DDD: 1
-    - Vector1_E46A46E3: 0.5
+    - Vector1_E46A46E3: 1.01
     - Vector1_EEF7E65F: 1
     - Vector1_FC8C728B: 20
     - _AlphaClip: 0
