@@ -55,8 +55,8 @@ Material:
     m_Floats:
     - Vector1_6FEB1DDD: 1
     - Vector1_B16F2D14: 1
-    - Vector1_EEF7E65F: 0.2
-    - Vector1_FC8C728B: 0.3
+    - Vector1_EEF7E65F: 0.05
+    - Vector1_FC8C728B: 1.53
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -67,22 +67,22 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0
+    - _Metallic: -0.97
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaterLevel: 0.66
-    - _Wavelength: 10
+    - _WaterLevel: 0.45
+    - _Wavelength: 3.09
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_72A13A51: {r: 0, g: 0.085986584, b: 0.6603774, a: 0.12941177}
-    - _BaseColor: {r: 0, g: 0.7490196, b: 0.7137255, a: 1}
+    - Color_72A13A51: {r: 0.31144744, g: 0.007843129, b: 0.48235294, a: 0.05490196}
+    - _BaseColor: {r: 0, g: 1.1976004, b: 2, a: 0.09411765}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
