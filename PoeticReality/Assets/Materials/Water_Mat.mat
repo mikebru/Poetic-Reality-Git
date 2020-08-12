@@ -56,7 +56,7 @@ Material:
     - Vector1_6FEB1DDD: 1
     - Vector1_B16F2D14: 1
     - Vector1_EEF7E65F: 0.05
-    - Vector1_FC8C728B: 2.48
+    - Vector1_FC8C728B: 3.25
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -76,13 +76,13 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaterLevel: 0.19
-    - _WaveHeight: 0.13
+    - _WaterLevel: -0.21
+    - _WaveHeight: 0.395
     - _Wavelength: 3.09
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_72A13A51: {r: 0.0003114994, g: 0.009090782, b: 0.066037714, a: 0.12156863}
+    - Color_72A13A51: {r: 0.0003114994, g: 0.009090782, b: 0.066037714, a: 0.13333334}
     - _BaseColor: {r: 0.010471203, g: 0.062827215, b: 0.5549738, a: 0.9019608}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
