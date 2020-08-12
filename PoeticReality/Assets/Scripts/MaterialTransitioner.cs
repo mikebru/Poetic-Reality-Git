@@ -16,10 +16,14 @@ public class MaterialTransitioner : MonoBehaviour
 
     private void OnValidate()
     {
-        renderers = GetComponentsInChildren<Renderer>();
-        
 
-        ChangeMaterial();
+        if (this.enabled == true)
+         {
+            renderers = GetComponentsInChildren<Renderer>();
+
+
+            ChangeMaterial();
+        }
     }
 
     void ChangeMaterial()

@@ -70,7 +70,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 3.8
+    - _Metallic: 2.02
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _RainDisplace: 1
@@ -94,7 +94,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DeepColor: {r: 0.3490566, g: 0, b: 0.32304853, a: 0.41960785}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: -0.3584347, g: 1.1370025, b: -1.5396056, a: 0}
+    - _Position: {r: 6.405, g: 1.83, b: -5.181, a: 0}
     - _Range: {r: 0, g: 8, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
 --- !u!114 &3956286757418361419
