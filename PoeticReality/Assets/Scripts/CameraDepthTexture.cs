@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.ARFoundation;
 public class CameraDepthTexture : MonoBehaviour
 {
-
     private Camera camera;
 
     // Start is called before the first frame update
