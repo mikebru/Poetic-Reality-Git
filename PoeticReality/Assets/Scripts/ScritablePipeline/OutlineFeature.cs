@@ -6,6 +6,10 @@ public class OutlineFeature : ScriptableRendererFeature
 {
     class OutlinePass : ScriptableRenderPass
     {
+
+        public int blitShaderPassIndex = 0;
+
+
         private RenderTargetIdentifier source { get; set; }
         private RenderTargetHandle destination { get; set; }
         public Material outlineMaterial = null;
@@ -17,9 +21,10 @@ public class OutlineFeature : ScriptableRendererFeature
             this.destination = destination;
         }
 
-        public OutlinePass(Material outlineMaterial)
+        public OutlinePass(Material outlineMaterial, int blitShaderPassIndex)
         {
             this.outlineMaterial = outlineMaterial;
+            this.blitShaderPassIndex = blitShaderPassIndex;
         }
 
 
@@ -48,11 +53,13 @@ public class OutlineFeature : ScriptableRendererFeature
             if (destination == RenderTargetHandle.CameraTarget)
             {
                 cmd.GetTemporaryRT(temporaryColorTexture.id, opaqueDescriptor, FilterMode.Point);
-                Blit(cmd, source, temporaryColorTexture.Identifier(), outlineMaterial, 0);
+                Blit(cmd, source, temporaryColorTexture.Identifier(), outlineMaterial, blitShaderPassIndex);
                 Blit(cmd, temporaryColorTexture.Identifier(), source);
-
             }
-            else Blit(cmd, source, destination.Identifier(), outlineMaterial, 0);
+            else
+            {
+                 Blit(cmd, source, destination.Identifier(), outlineMaterial, blitShaderPassIndex);
+            }
 
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
@@ -71,6 +78,8 @@ public class OutlineFeature : ScriptableRendererFeature
     public class OutlineSettings
     {
         public Material outlineMaterial = null;
+        public int blitMaterialPassIndex = -1;
+
     }
 
     public OutlineSettings settings = new OutlineSettings();
@@ -79,8 +88,8 @@ public class OutlineFeature : ScriptableRendererFeature
 
     public override void Create()
     {
-        outlinePass = new OutlinePass(settings.outlineMaterial);
-        outlinePass.renderPassEvent = RenderPassEvent.AfterRenderingTransparents;
+        outlinePass = new OutlinePass(settings.outlineMaterial, settings.blitMaterialPassIndex);
+        outlinePass.renderPassEvent = RenderPassEvent.AfterRenderingOpaques;
         outlineTexture.Init("_OutlineTexture");
     }
 
