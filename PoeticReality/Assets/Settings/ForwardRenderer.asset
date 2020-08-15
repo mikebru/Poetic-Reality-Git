@@ -66,3 +66,4 @@ MonoBehaviour:
   m_Active: 1
   settings:
     outlineMaterial: {fileID: 2100000, guid: 97c412969eda186448a5622cd10f635b, type: 2}
+    blitMaterialPassIndex: 0

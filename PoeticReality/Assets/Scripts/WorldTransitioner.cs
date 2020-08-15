@@ -49,7 +49,7 @@ public class WorldTransitioner : MonoBehaviour
 
 
             inWorldB = true;
-        }else if (newValue <= 0 && inWorldB == true)
+        }else if (newValue < 1 && inWorldB == true)
         {
             cameraA.cullingMask = worldA;
             cameraB.cullingMask = worldB;
