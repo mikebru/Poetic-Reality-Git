@@ -6,9 +6,15 @@
       "scopes": [
         "io.extendreality"
       ]
+    },
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [ "jp.keijiro" ]
     }
   ],
   "dependencies": {
+    "jp.keijiro.klak.spout": "1.0.0",
     "com.unity.addressables": "1.11.2",
     "com.unity.animation.rigging": "0.2.6-preview",
     "com.unity.collab-proxy": "1.2.16",

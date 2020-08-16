@@ -16,6 +16,7 @@ public class WorldTransitioner : MonoBehaviour
     public Camera cameraB;
 
     public bool inWorldB;
+    public bool cameraSwitching;
 
     // Start is called before the first frame update
     void Start()
@@ -39,26 +40,27 @@ public class WorldTransitioner : MonoBehaviour
     {
 
         worldMaterial.SetFloat("_Transition", newValue);
-        
 
 
-        if (newValue >= 1 && inWorldB == false)
+        if (cameraSwitching == true)
         {
-            cameraA.cullingMask = worldB;
-            cameraB.cullingMask = worldA;
+            if (newValue >= 1 && inWorldB == false)
+            {
+                cameraA.cullingMask = worldB;
+                cameraB.cullingMask = worldA;
 
 
-            inWorldB = true;
-        }else if (newValue < 1 && inWorldB == true)
-        {
-            cameraA.cullingMask = worldA;
-            cameraB.cullingMask = worldB;
+                inWorldB = true;
+            }
+            else if (newValue < 1 && inWorldB == true)
+            {
+                cameraA.cullingMask = worldA;
+                cameraB.cullingMask = worldB;
 
 
-            inWorldB = false;
+                inWorldB = false;
+            }
         }
-
-
     }
 
 }

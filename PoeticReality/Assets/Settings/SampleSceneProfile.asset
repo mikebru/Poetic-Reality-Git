@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   color:
     m_OverrideState: 0
@@ -99,10 +99,10 @@ MonoBehaviour:
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
-    m_Value: 2.32
+    m_Value: 1.5
   contrast:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 32
     min: -100
     max: 100
   colorFilter:
@@ -151,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
 --- !u!114 &7445374824373363472
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -172,6 +172,6 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.41
+    m_Value: 0.422
     min: 0
     max: 1

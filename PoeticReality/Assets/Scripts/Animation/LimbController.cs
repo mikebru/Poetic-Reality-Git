@@ -76,15 +76,17 @@ public class LimbController : MonoBehaviour
     void LimbReach()
     {
         //distance between limb and player 
-        float distance = Vector3.Distance(player.transform.position, this.transform.position);
+        //float distance = Vector3.Distance(player.transform.position, this.transform.position);
 
-        if(distance <= reachDistance + 5)
+        float distance = reachDistance;
+
+        if (distance <= reachDistance + 5)
         {
             float reachLerp = Mathf.Lerp(1, 0, distance / reachDistance);
 
             //reachLerp = Mathf.Pow(reachLerp, 5);
 
-            animator.SetFloat(ParameterName, LimbExtension);
+            animator.SetFloat(ParameterName, LimbExtension * TurbulenceStrength);
 
             this.transform.position = Vector3.Lerp(startPosition, player.transform.position/reachDistance, (Mathf.Pow(reachLerp, LimbPowerFallOff)));  
         }
