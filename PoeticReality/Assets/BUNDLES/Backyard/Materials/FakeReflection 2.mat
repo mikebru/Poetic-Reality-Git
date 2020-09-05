@@ -66,7 +66,7 @@ Material:
     - Vector1_239CA160: 1
     - Vector1_58C036B: 0
     - Vector1_6FEB1DDD: 1
-    - Vector1_E46A46E3: 0
+    - Vector1_E46A46E3: 1
     - Vector1_EEF7E65F: 1
     - Vector1_FC8C728B: 20
     - _AlphaClip: 0
@@ -74,7 +74,7 @@ Material:
     - _BumpScale: 1
     - _Cull: 0
     - _Cutoff: 0.5
-    - _DisplaceSpeed: 1
+    - _DisplaceSpeed: 0.1
     - _DisplaceStrength: 0.41
     - _DstBlend: 0
     - _EnvironmentReflections: 1
@@ -93,7 +93,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WaterLevel: 0
-    - _Wavelength: 7.91
+    - _Wavelength: 1.9
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

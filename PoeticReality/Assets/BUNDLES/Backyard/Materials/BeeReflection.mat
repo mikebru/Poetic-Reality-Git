@@ -62,9 +62,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - DisplaceStrength: 0
-    - Vector1_1E305DD5: 0.5
+    - Vector1_1E305DD5: 0.32
     - Vector1_239CA160: 2.17
-    - Vector1_58C036B: 0.19
+    - Vector1_58C036B: 1.1
     - Vector1_6FEB1DDD: 1
     - Vector1_E46A46E3: 1
     - Vector1_EEF7E65F: 1
