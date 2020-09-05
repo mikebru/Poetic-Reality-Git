@@ -14,12 +14,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BUNDLES/01_VALLEY/Scenes/CreekCollage.unity
     guid: f89c402f7fa4207429f0ff050053eb2b
-  - enabled: 1
+  - enabled: 0
     path: Assets/BUNDLES/Backyard/Scenes/Backyard.unity
     guid: cda6057426b7784478796965e570e85b
   - enabled: 0
     path: Assets/Scenes/audioLasp.unity
     guid: 5f0a48a2a43237043ac048a7b344dee1
+  - enabled: 0
+    path: Assets/BUNDLES/Creek Encounter/creekEncounter.unity
+    guid: 4264cd14f46aad64e815851b77963791
+  - enabled: 1
+    path: Assets/Scenes/LiveStream.unity
+    guid: 0a2648b4a81aedb45bdd46b9ddcac742
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 424a04c4687b9a24c9422f0fa2e9c174,
       type: 2}

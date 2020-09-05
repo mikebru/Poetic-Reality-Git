@@ -63,6 +63,9 @@ namespace UnityTemplateProjects
         [Tooltip("Exponential boost factor on translation, controllable by mouse wheel.")]
         public float boost = 3.5f;
 
+        public float speed = 1f;
+
+
         [Tooltip("Time it takes to interpolate camera position 99% of the way to the target."), Range(0.001f, 1f)]
         public float positionLerpTime = 0.2f;
 
@@ -140,7 +143,7 @@ namespace UnityTemplateProjects
             }
 
             // Rotation
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(0))
             //if(true)
             {
                 //Cursor.lockState = CursorLockMode.Locked;
@@ -154,7 +157,7 @@ namespace UnityTemplateProjects
             }
             
             // Translation
-            translation = GetInputTranslationDirection() * Time.deltaTime;
+            translation = GetInputTranslationDirection() * Time.deltaTime * speed;
 
             // Speed up movement when shift key held
             if (Input.GetKey(KeyCode.LeftShift))

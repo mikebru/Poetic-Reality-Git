@@ -15,12 +15,14 @@ public class DistanceEffector : MonoBehaviour
     private Transform player;
     public Transform target;
 
+    private Vector3 startSize;
+
 
     // Start is called before the first frame update
     void Start()
     {
         player = Camera.main.transform;
-
+        startSize = transform.localScale;
     }
 
     // Update is called once per frame
@@ -37,7 +39,7 @@ public class DistanceEffector : MonoBehaviour
 
     public void SetScale(float size)
     {
-        transform.localScale = Vector3.one * size;
+        transform.localScale = startSize + (Vector3.one * size);
     }
 
 }
