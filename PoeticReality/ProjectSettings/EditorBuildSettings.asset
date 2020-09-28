@@ -23,9 +23,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BUNDLES/Creek Encounter/creekEncounter.unity
     guid: 4264cd14f46aad64e815851b77963791
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LiveStream.unity
     guid: 0a2648b4a81aedb45bdd46b9ddcac742
+  - enabled: 1
+    path: Assets/BUNDLES/ImageSpace/ImageSpace.unity
+    guid: 14069fa1f2f8fb84ca044ae9935079f1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 424a04c4687b9a24c9422f0fa2e9c174,
       type: 2}
