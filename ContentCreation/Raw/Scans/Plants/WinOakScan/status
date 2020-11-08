@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --input \"D:/Documents/GradSchool/2019 -2020/WinshipOaks/MeshroomCache/Meshing/7ac10339314e53a658b70521addd522cbc8d060d/densePointCloud.abc\" --imagesFolder \"D:/Documents/GradSchool/2019 -2020/WinshipOaks/MeshroomCache/PrepareDenseScene/2954427ee195d42e83145ee5f01c3bbf9e96ab17\" --inputMesh \"D:/Documents/GradSchool/2019 -2020/WinshipOaks/MeshroomCache/MeshDecimate/917b9fc8483db4d0e407b142edbae5e0b1903d51/mesh.obj\" --textureSide 8192 --downscale 1 --outputTextureFileType png --unwrapMethod Basic --useUDIM True --fillHoles False --padding 5 --correctEV False --useScore True --processColorspace sRGB --multiBandDownscale 4 --multiBandNbContrib 1 5 10 0 --bestScoreThreshold 0.1 --angleHardThreshold 90.0 --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --verboseLevel info --output \"D:/Documents/GradSchool/2019 -2020/WinshipOaks/MeshroomCache/Texturing/96e5e0da3ca550b1b81037a2bc993a22ae04bba4\" ",
+    "env": null,
+    "startDateTime": "2019-12-09 18:24:18.194300",
+    "endDateTime": "2019-12-09 18:44:22.835050",
+    "elapsedTime": 1204.6427443027496,
+    "hostname": "MichaelTop",
+    "sessionUid": "2cfbd49c-1ad3-11ea-bace-70c94e7a6ac6",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:20:04.642744"
+}

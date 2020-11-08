@@ -1,0 +1,99 @@
+newmtl texturedMesh:TextureAtlas_1001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1001.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1003
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1002.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1005
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1003.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1007
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1004.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1009
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1005.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1011
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1006.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1013
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1007.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1015
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1008.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1017
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1009.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1019
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1010.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl texturedMesh:TextureAtlas_1021
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd texture_1011.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
