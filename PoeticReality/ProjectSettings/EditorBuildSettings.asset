@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BUNDLES/PlantSpace/PlantSpace.unity
     guid: 94f8d9ef037c870409b0633e8135681d
+  - enabled: 0
+    path: Assets/BUNDLES/Backyard/Scenes/Drafting.unity
+    guid: 5a15bc658ef988347b19062cee52ff60
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 424a04c4687b9a24c9422f0fa2e9c174,
       type: 2}
