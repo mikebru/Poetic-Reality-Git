@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --input \"C:/Users/Will Tallent/Desktop/backyardDrone/MeshroomCache/Meshing/85f463bf5186e5a24ec6daa52f2f65e2cf1f8e0f/densePointCloud.abc\" --imagesFolder \"C:/Users/Will Tallent/Desktop/backyardDrone/MeshroomCache/PrepareDenseScene/e52ff96749d7bf94b36e5f5c6d358421cb13eb83\" --inputMesh \"C:/Users/Will Tallent/Desktop/backyardDrone/MeshroomCache/MeshFiltering/1ae7278af3cb4d2e1024d65c1545ec68f9a7d240/mesh.obj\" --textureSide 8192 --downscale 2 --outputTextureFileType png --unwrapMethod Basic --useUDIM True --fillHoles False --padding 5 --multiBandDownscale 4 --multiBandNbContrib 1 5 10 0 --useScore True --bestScoreThreshold 0.1 --angleHardThreshold 90.0 --processColorspace sRGB --correctEV False --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --subdivisionTargetRatio 0.8 --verboseLevel info --output \"C:/Users/Will Tallent/Desktop/backyardDrone/MeshroomCache/Texturing/34405cee76d32ed1d829479476d2021988f5382d\"",
+    "env": null,
+    "startDateTime": "2021-01-11 23:27:07.822660",
+    "endDateTime": "2021-01-11 23:45:05.595497",
+    "elapsedTime": 1077.7738344669342,
+    "hostname": "DESKTOP-KGK4V7S",
+    "sessionUid": "336467f4-5477-11eb-a7c3-1c1b0d0de4a6",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:17:57.773834"
+}
